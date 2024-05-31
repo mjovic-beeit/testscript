@@ -130,3 +130,6 @@ app.get('/api/v1/products/recommended-products', (req, res) => {
   res.send(script);
 });
 
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
+});
