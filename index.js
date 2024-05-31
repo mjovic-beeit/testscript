@@ -47,7 +47,7 @@
         const [recommendedProducts, setRecommendedProducts] = useState([]);
 
         useEffect(() => {
-          fetch(\`https://affiliate-console-lwhnjaysma-oa.a.run.app/api/v1/products/recommended-products?productID=\${productID}\`, {
+          fetch(\`https://affiliate-console-lwhnjaysma-oa.a.run.app/api/v1/products/recommended-products?productID=${productID}\`, {
             method: 'GET',
           })
           .then(response => response.json())
